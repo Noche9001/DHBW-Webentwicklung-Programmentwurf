@@ -1,0 +1,68 @@
+<script src="js/socket.js"></script>
+<script src="js/msgapi.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="Chrome">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style/chat.css">
+  <title>Chat-App Friends</title>
+</head>
+<body>
+<div class="backCardLarge">
+  <div class="contentDivLarge">
+    <div class="header">
+      <div>
+        <img class="smallImage" src="images/chat.png">
+      </div>
+      <div>
+        <h4>Chat</h4>
+      </div>
+      <div>
+        <a href="friends.html">
+          <button class="btn1">Remove</button>
+        </a>
+      </div>
+      <div>
+        <a href="profile.html">
+          <button class="btn2">Profile</button>
+        </a>
+      </div>
+      <div>
+        <a href="friends.html">
+          <button class="btn2">Friends</button>
+        </a>
+      </div>
+    </div>
+    <hr>
+    <div class="row2">
+      <div class="friendsNav">
+        <div>
+          <h5>Chat with Friends</h5>
+          <ul>
+            <li><a href="profile.html">Anita</a></li>
+            <li><a href="profile.html">Bene</a></li>
+            <li><a href="profile.html">Lukas</a></li>
+            <li><a href="profile.html">Darius</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="chatDiv">
+        <div>
+          <h5>Bene</h5>
+        </div>
+        <div class="chatContent" id="chatContent">
+
+        </div>
+        <div class="row">
+          <input class="largeInput" id="message" type="text" placeholder="Type a messgae">
+          <button class="btn2" id="sendMsg" onclick="send()">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<script src="js/room.js"></script>
