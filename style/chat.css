@@ -1,0 +1,230 @@
+body {
+    background-color: #212738;;
+}
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #212738;
+}
+p {
+    color: #212738;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #212738;
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #212738;
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 18px;
+    color: #212738;
+}
+hr {
+    background-color: #212738;
+    width: 100%;
+    height: 1px;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    padding: 10px;
+    border-bottom: 1px solid #212738;
+}
+select {
+    width: 164px;
+    height: 26px;
+    border: none;
+    border-radius: 4px;
+}
+a {
+    text-decoration: none;
+    color: #212738;
+}
+.backCardSmall {
+    background-color: #81D2C7;
+    width: 300px;
+    height: 460px;
+    border-radius: 25px;
+    margin: 200px auto 0 auto;
+}
+.backCardLarge {
+    background-color: #81D2C7;
+    width: 900px;
+    height: 560px;
+    border-radius: 25px;
+    margin: 200px auto 0 auto;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    height: 50px;
+    padding-top: 14px;
+}
+.smallImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.mediumImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 60px;
+    margin-top: 20px;
+}
+.contentDivSmall {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 460px;
+    margin: 20px 20px 20px 20px;
+}
+.contentDivLarge {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 560px;
+    margin: 20px 20px 20px 20px;
+}
+.friendsNav {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 460px;
+    gap: 12px;
+}
+.segment {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.segmentLarge {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 450px;
+    height: 460px;
+    gap: 12px;
+}
+.segmentLarge2 {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 420px;
+    gap: 12px;
+}
+.chatDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 460px;
+    width: 660px;
+}
+.chatContent {
+    height: 380px;
+    width: 660px;
+}
+.message {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.segmentInputs {
+    display: flex;
+    flex-direction: column;
+    height: 125px;
+    padding: 5px 0 5px;
+    gap: 12px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+}
+.row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+.rowInputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+}
+.onlyRow {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.smallInput {
+    width: 160px;
+    height: 24px;
+    border: none;
+    border-radius: 4px;
+}
+.mediumInput {
+    width: 200px;
+    height: 22px;
+    border: none;
+    border-radius: 4px;
+}
+.largeInput {
+    width: 380px;
+    height: 22px;
+    border: none;
+    border-radius: 4px;
+}
+.rowBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.btn1 {
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 24px;
+    color: #212738;
+    background-color: #E0E0E2;
+    transition-duration: 0.4s;
+    pointer-events: auto;
+}
+.btn1:hover {
+    background-color: #b5b5ba;
+}
+.btn2 {
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    height: 24px;
+    color: #ffffff;
+    background-color: #027BFF;
+    transition-duration: 0.4s;
+    pointer-events: auto;
+}
+.btn2:hover {
+    background-color: #0059b8;
+}
