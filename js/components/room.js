@@ -28,8 +28,9 @@ init = () => {
         user = sessionStorage.getItem("user");
         roomIdSpan.innerText = roomId;
         usernameHeader.innerText = user;
-
+        socket2.send("REGISTERROOM "+ roomId)
         sendMsg("SERVER", user + " hat den Raum betreten").then(() => {
+            socket2.send("UPDATE "+ roomId)
             loadAllMessages()
             canvas.scrollTop = canvas.scrollHeight - canvas.clientHeight;
         });
@@ -45,9 +46,14 @@ waitForReady = async () => {
 }
 
 send = () => {
-    sendMsg(user, messageInput.value, null).then(() => loadAllMessages());
+    sendMsg(user, messageInput.value, null).then(() => {
+        socket2.send("UPDATE "+roomId)
+        loadAllMessages()
+    });
     messageInput.value = "";
 }
+
+
 
 createMessages = () => {
     while (canvas.firstChild) {

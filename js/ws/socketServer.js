@@ -3,6 +3,7 @@ const app = require('express')();
 const appWs = require('express-ws')(app);
 
 const conns = new Map();
+const rooms = new Map();
 
 app.ws("/ws", ws => {
     ws.on('message', msg => {
@@ -42,11 +43,34 @@ app.ws("/ws", ws => {
             }
         }
 
+        else if(msg.includes("REGISTERROOM ")){
+            let user = findKey(ws);
+            let room = msg.substring(13)
+            console.log(room)
+            rooms.set(user, room);
+            console.log(rooms)
+        }
+
+        else if(msg.includes("UPDATE ")){
+            const roomId = msg.substring(7);
+            console.log("her")
+            console.log(roomId)
+            console.log(rooms)
+            rooms.forEach((value, key) => {
+                console.log(key)
+
+                if(rooms.get(key) === roomId) {
+                    let con = conns.get(key);
+                    con.send("UPDATE")
+                }
+            })
+        }
+
     });
     ws.on('close', () => {
         const key = findKey(ws);
-        conns.delete(key)
-        console.log("logout "+conns.keys())
+        conns.delete(key);
+        if(rooms.has(key)) rooms.delete(key);
     })
 });
 
