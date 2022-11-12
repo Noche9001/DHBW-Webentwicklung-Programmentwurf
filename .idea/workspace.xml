@@ -4,28 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fa171ff-7b4d-4da5-ac84-0c2dc548c6b0" name="Changes" comment="Stand 12/11&#10;-UI Überarbeitung&#10;-Raumname prüfung&#10;(-Scrollbar)&#10;&#10;TODO&#10;-Username Eingabe&#10;-Nachrichten an einzelne User">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/components/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/ws/socket2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/ws/socketServer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style/home/pm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style/login/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ws/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7fa171ff-7b4d-4da5-ac84-0c2dc548c6b0" name="Changes" comment="Stand 12/11&#10;-UI Überarbeitung&#10;-Raumname prüfung&#10;-Username Eingabe&#10;-Nachrichten an einzelne User&#10;&#10;TODO&#10;(-Scrollbar)&#10;(-Auto-Update bei Allen Usern im Raum)">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_2022_07_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_2022_07_40__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_2022_07_40__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_2022_07_40__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2022_07_41__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2022_07_41__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2022_07_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2022_07_46__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Programmentwurf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Programmentwurf.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/msgapi.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/api/msgapi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/room.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ws/socket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/home/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/home/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/room.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/ws/socket2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ws/socket2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/ws/socketServer.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ws/socketServer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Stand_09/11" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -136,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668235437869</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Stand 12/11&#10;-UI Überarbeitung&#10;-Raumname prüfung&#10;-Username Eingabe&#10;-Nachrichten an einzelne User&#10;&#10;TODO&#10;(-Scrollbar)&#10;(-Auto-Update bei Allen Usern im Raum)">
+      <created>1668252145253</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668252145253</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +152,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="Stand 09/11&#10;-Raum erstellen möglich&#10;-Nachrichten in Raum senden möglich&#10;&#10;TODO&#10;-Username Eingabe&#10;-Nachrichten an einzelne User&#10;-Frontend überarbeiten" />
     <MESSAGE value="Stand 12/11&#10;-UI Überarbeitung&#10;-Raumname prüfung&#10;(-Scrollbar)&#10;&#10;TODO&#10;-Username Eingabe&#10;-Nachrichten an einzelne User" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stand 12/11&#10;-UI Überarbeitung&#10;-Raumname prüfung&#10;(-Scrollbar)&#10;&#10;TODO&#10;-Username Eingabe&#10;-Nachrichten an einzelne User" />
+    <MESSAGE value="Stand 12/11&#10;-UI Überarbeitung&#10;-Raumname prüfung&#10;-Username Eingabe&#10;-Nachrichten an einzelne User&#10;&#10;TODO&#10;(-Scrollbar)&#10;(-Auto-Update bei Allen Usern im Raum)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stand 12/11&#10;-UI Überarbeitung&#10;-Raumname prüfung&#10;-Username Eingabe&#10;-Nachrichten an einzelne User&#10;&#10;TODO&#10;(-Scrollbar)&#10;(-Auto-Update bei Allen Usern im Raum)" />
   </component>
 </project>

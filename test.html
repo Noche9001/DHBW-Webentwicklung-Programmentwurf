@@ -6,7 +6,7 @@
 </head>
 <body>
     <input id="a">
-    <button onclick="socket2.setUser()">Login</button>
+    <button onclick="socket2.register()">Login</button>
     <input id="b">
     <input id="c">
     <button onclick="socket2.privatemsg()">Senden</button>
@@ -14,7 +14,7 @@
     <p>X</p>
     <p>S</p>
 </div>
-<button id="delete" onclick="myfunc()">DELETE</button>
+<button id="delete" onclick="sendTest()">DELETE</button>
 </body>
 </html>
 <script src="js/ws/socket2.js"></script>
@@ -22,5 +22,10 @@
     let div = document.getElementById("div")
     function myfunc() {
         div.parentNode.removeChild(div);
+    }
+</script>
+<script>
+    sendTest = () => {
+        socket2.send("UPDATE "+ "R1")
     }
 </script>
