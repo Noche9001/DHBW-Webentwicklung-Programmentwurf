@@ -2,10 +2,8 @@ const input = document.getElementById("username");
 
 login = () => {
     const username = input.value;
-    console.log(username)
 
     if(username.length > 0){
-        console.log("a")
 
         if(username.length > 9) alert("Der Nutzername darf maximal 9 Zeichen lang sein")
         else {

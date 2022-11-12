@@ -13,7 +13,7 @@ window.onload = () => {
 
     roomId = urlParams.get('roomId');
 
-    if(roomId == null || roomId === "") {
+    if(roomId == null || roomId === "" ) {
         window.location.href = "/Programmentwurf/";
     }
     else {
@@ -26,13 +26,14 @@ init = () => {
     waitForReady().then(() => {
         socket.subscribe(roomId);
         user = sessionStorage.getItem("user");
+        if (user == null || user === "") window.location.href = "/Programmentwurf/login.html";
         roomIdSpan.innerText = roomId;
         usernameHeader.innerText = user;
         socket2.send("REGISTERROOM "+ roomId)
         sendMsg("SERVER", user + " hat den Raum betreten").then(() => {
             socket2.send("UPDATE "+ roomId)
             loadAllMessages()
-            canvas.scrollTop = canvas.scrollHeight - canvas.clientHeight;
+
         });
     })
 }
@@ -101,8 +102,8 @@ loadAllMessages = () => {
     loadMsgs().then(msgs => {
         messages = [];
         msgs.map((mappedMsg => messages.push(mappedMsg)));
-        messages.reverse();
         createMessages();
+        canvas.scrollTop = canvas.scrollHeight;
     })
 }
 
@@ -113,7 +114,7 @@ leave = () => {
     });
 
 }
-//SO
+// https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
 sleep = (ms) => {
     return new Promise((resolve => setTimeout(resolve, ms)));
 }

@@ -53,7 +53,6 @@ app.ws("/ws", ws => {
 
         else if(msg.includes("UPDATE ")){
             const roomId = msg.substring(7);
-            console.log("her")
             console.log(roomId)
             console.log(rooms)
             rooms.forEach((value, key) => {

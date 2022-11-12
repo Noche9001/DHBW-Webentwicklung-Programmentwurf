@@ -19,7 +19,6 @@ button.addEventListener("click", () => {
 
 switchFunc = () => {
     let switchMode = document.getElementById("switch").innerText
-    console.log(switchMode)
     if(switchMode === "PM"){
         document.getElementById("switch").innerText = "Räume";
 

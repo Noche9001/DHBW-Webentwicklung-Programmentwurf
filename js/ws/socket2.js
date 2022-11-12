@@ -10,9 +10,7 @@ socket2.onopen = () =>{
 socket2.onmessage = (msg) => {
         if(msg.data === "INUSE") alert("Der Benutzername ist zur Zeit belegt.")
         else if(msg.data === "SUCCESS") {
-                console.log(window.location.pathname)
                 if(window.location.pathname === "/Programmentwurf/login.html") window.location.href = "/Programmentwurf/";
-                else console.log(sessionStorage.getItem("user"))
         }
         else if(msg.data === "UPDATE") {
                 loadAllMessages()

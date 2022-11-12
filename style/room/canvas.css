@@ -14,15 +14,3 @@
     grid-template-columns: 25px 1fr;
     grid-template-rows: repeat(10, 1fr);
 }
-
-/*WS-School*/
-/* width */
-/*::-webkit-scrollbar {*/
-/*    width: 10px;*/
-/*    background: linear-gradient(0deg, rgba(124,212,227,1) 2%, rgba(145,224,237,1) 50%, rgba(83,171,187,1) 100%);*/
-/*}*/
-/*!* Handle *!*/
-/*::-webkit-scrollbar-thumb {*/
-/*    background: #3c7e8a;*/
-/*    height: 10px;*/
-/*}*/

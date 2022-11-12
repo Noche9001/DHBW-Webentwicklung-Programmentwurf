@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fa171ff-7b4d-4da5-ac84-0c2dc548c6b0" name="Changes" comment="Stand 12/11&#10;-UI Überarbeitung&#10;-Raumname prüfung&#10;-Username Eingabe&#10;-Nachrichten an einzelne User&#10;&#10;TODO&#10;(-Scrollbar)&#10;(-Auto-Update bei Allen Usern im Raum)">
+    <list default="true" id="7fa171ff-7b4d-4da5-ac84-0c2dc548c6b0" name="Changes" comment="Stand 12/11&#10;-UI Überarbeitung&#10;-Raumname prüfung&#10;(-Scrollbar)&#10;&#10;TODO&#10;-Username Eingabe&#10;-Nachrichten an einzelne User">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_2022_07_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_2022_07_40__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_2022_07_40__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_2022_07_40__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2022_07_41__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2022_07_41__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2022_07_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2022_07_46__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/components/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/room.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/ws/socket2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ws/socket2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/ws/socketServer.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ws/socketServer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/room.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/chat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/room/canvas.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/room/canvas.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
