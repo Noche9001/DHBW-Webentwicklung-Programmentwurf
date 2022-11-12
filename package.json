@@ -7,6 +7,6 @@
     "ws": "^8.11.0"
   },
   "scripts": {
-    "start": "node js/socketServer.js"
+    "start": "node js/ws/socketServer.js"
   }
 }

@@ -5,14 +5,23 @@
     <title>WebProg Chat</title>
     <link rel="stylesheet" href="style/home/home.css">
 </head>
-<body>
-    <div class="container">
-        <label for="roomId">Raum-ID</label>
-        <input type="text" id="roomId">
+<body id="body">
+    <button class="logout" onclick="socket2.logout()">Logout</button>
+    <button class="switch" onclick="switchFunc()" id="switch">PM</button>
+    <div class="container" id="roomContainer">
+        <label for="roomId">Raum beitreten</label>
+        <input type="text" id="roomId" placeholder="Raum-ID">
         <button id="createRoom">Raum erstellen / betreten</button>
-        <div style="text-align: center"><b>Erlaubte Zeichen:</b><br> a-z; A-Z; 0-9; -; _</div>
+        <div class="rule"><b>Erlaubte Zeichen: </b><br><span>a-z; A-Z; 0-9; -; _</span></div>
     </div>
+<!--    <div class="containerPM" id="pmContainer">-->
+<!--        <label>Direktnachricht senden</label>-->
+<!--        <input type="text" id="receiver" placeholder="Empfänger">-->
+<!--        <input type="text" id="message" placeholder="Nachricht">-->
+<!--        <button id="createRoom">Nachricht senden</button>-->
+<!--    </div>-->
 
 </body>
 </html>
-<script src="js/home.js"></script>
+<script src="js/components/home.js"></script>
+<script src="js/ws/socket2.js"></script>

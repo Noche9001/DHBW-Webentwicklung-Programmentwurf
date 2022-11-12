@@ -1,5 +1,6 @@
-<script src="js/socket.js"></script>
-<script src="js/msgapi.js"></script>
+<script src="js/ws/socket.js"></script>
+<script src="js/ws/socket2.js"></script>
+<script src="js/api/msgapi.js"></script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,7 @@
     <div class="container">
         <div class="header">
             <div class="online"></div>
-            <span class="usernameHeader">Noche9001</span>
+            <span class="usernameHeader" id="user"></span>
             <button onclick="leave()">Raum verlassen</button>
             <span class="roomId">Raum-ID: <b id="roomId"></b></span>
         </div>
@@ -28,4 +29,4 @@
 
 </body>
 </html>
-<script src="js/room.js"></script>
+<script src="js/components/room.js"></script>
