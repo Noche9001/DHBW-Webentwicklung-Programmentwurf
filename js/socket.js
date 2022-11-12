@@ -1,10 +1,7 @@
 const socket = new WebSocket("wss://chat.web2021.dhbw.scytec.de/ws");
-let activeUsers;
 
 socket.onopen = () => {
     console.log("Connection established");
-    activeUsers++;
-    console.log("Active Users: " + activeUsers);
 }
 
 socket.onclose = () => {

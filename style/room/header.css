@@ -1,0 +1,73 @@
+.header {
+    grid-column: 1 / 6;
+    grid-row: 1;
+
+    height: 60px;
+
+    background: linear-gradient(147deg, rgba(86,214,246,1) 11%, rgba(110,225,249,1) 52%, rgba(95,186,203,1) 93%);
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    display:grid;
+    grid-template-columns: 52px 1fr 1fr 1fr 52px;
+}
+
+
+
+.online {
+    grid-column: 1;
+
+    width: 15px;
+    height: 15px;
+
+    border-radius: 20px;
+    background-color: lightgreen;
+
+    align-self: center;
+    text-align: center;
+    justify-self: right;
+
+    margin-right: 8px;
+    animation: glow 6s infinite;
+}
+
+.usernameHeader{
+    grid-column: 2;
+    align-self: center;
+    justify-self: left;
+}
+
+.header > button, button:hover {
+    width: 75%;
+    height: 55%;
+
+    grid-column: 3;
+
+    margin: auto;
+
+    overflow: auto;
+
+    border:none;
+    border-radius: 5px;
+    background: linear-gradient(147deg, rgba(124,212,227,1) 0%, rgba(83,171,187,1) 65%);
+    cursor: pointer;
+}
+
+.roomId{
+    grid-column: 4;
+    align-self: center;
+    justify-self: right;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 1px darkgreen;
+    }
+    50% {
+        box-shadow: 0 0 15px darkgreen;
+    }
+    100%{
+        box-shadow: 0 0 1px darkgreen;
+    }
+}

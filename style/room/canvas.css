@@ -1,0 +1,28 @@
+.canvas {
+    grid-column: 1 / 6;
+    grid-row: 2;
+
+    width: 100%;
+    height: 100%;
+    min-width: 550px;
+
+    overflow-y: scroll;
+
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 10%, rgba(238, 238, 238, 1) 56%);
+
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    grid-template-rows: repeat(10, 1fr);
+}
+
+/*WS-School*/
+/* width */
+/*::-webkit-scrollbar {*/
+/*    width: 10px;*/
+/*    background: linear-gradient(0deg, rgba(124,212,227,1) 2%, rgba(145,224,237,1) 50%, rgba(83,171,187,1) 100%);*/
+/*}*/
+/*!* Handle *!*/
+/*::-webkit-scrollbar-thumb {*/
+/*    background: #3c7e8a;*/
+/*    height: 10px;*/
+/*}*/
