@@ -1,0 +1,24 @@
+
+.spinner {
+    width: 50px;
+    height: 50px;
+
+    border-width: 5px;
+    border-radius: 50%;
+    border-color: grey;
+    border-style: solid;
+    border-top: white solid 5px;
+
+    animation: spin 5s infinite;
+    margin: 50px;
+
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(720deg);
+    }
+}

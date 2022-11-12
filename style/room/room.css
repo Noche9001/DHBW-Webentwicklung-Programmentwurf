@@ -1,0 +1,37 @@
+@import "header.css";
+@import "footer.css";
+@import "message.css";
+@import "canvas.css";
+@import "spinner.css";
+
+html, body {
+    background: linear-gradient(147deg, rgba(10,10,10,1) 0%, rgba(55,65,73,1) 57%);
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    /*https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/*/
+    transform: translate(-50%, -50%);
+
+    width: 40%;
+    height: 70%;
+    min-height: 300px;
+
+    border-radius: 25px;
+    box-shadow: 0 0 50px 0 rgba(255,255,255,0.6);
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 60px 1fr 60px;
+}
+
+@media screen and (max-width: 850px){
+    .container{
+        margin-left: 0;
+    }
+}
+
