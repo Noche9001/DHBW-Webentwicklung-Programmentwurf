@@ -8,11 +8,13 @@ const title = document.getElementById("title");
 let messages;
 
 window.onload = () => {
+    //Parameter auslesen
     const params = window.location.search;
     const urlParams = new URLSearchParams(params);
 
     roomId = urlParams.get('roomId');
 
+    //Raum über leeren parameter in URL vermeiden
     if(roomId == null || roomId === "" ) {
         window.location.href = "/Programmentwurf/";
     }
@@ -23,17 +25,18 @@ window.onload = () => {
 }
 
 init = () => {
+    //Auf Connection warten
     waitForReady().then(() => {
         socket.subscribe(roomId);
+
         user = sessionStorage.getItem("user");
-        if (user == null || user === "") window.location.href = "/Programmentwurf/login.html";
+
         roomIdSpan.innerText = roomId;
         usernameHeader.innerText = user;
-        socket2.send("REGISTERROOM "+ roomId)
-        sendMsg("SERVER", user + " hat den Raum betreten").then(() => {
-            socket2.send("UPDATE "+ roomId)
-            loadAllMessages()
 
+        //Sichergehen, dass min. 1 Nachricht im Raum ist um API-Error zu vermeiden
+        sendMsg("SERVER", user + " hat den Raum betreten").then(() => {
+            loadAllMessages()
         });
     })
 }
@@ -48,20 +51,21 @@ waitForReady = async () => {
 
 send = () => {
     sendMsg(user, messageInput.value, null).then(() => {
-        socket2.send("UPDATE "+roomId)
+        messageInput.value = "";
         loadAllMessages()
     });
-    messageInput.value = "";
 }
 
 
 
 createMessages = () => {
+    //Alle Elemente auf Canvas löschen
     while (canvas.firstChild) {
         canvas.removeChild(canvas.firstChild);
     }
-    for (let i = 0; i < messages.length; i++) {
 
+    for (let i = 0; i < messages.length; i++) {
+        //Nachricht Node bauen
         let msg = document.createDocumentFragment();
 
         const divMsg = document.createElement("div");
@@ -102,13 +106,17 @@ loadAllMessages = () => {
     loadMsgs().then(msgs => {
         messages = [];
         msgs.map((mappedMsg => messages.push(mappedMsg)));
+
         createMessages();
+
+        //Scrollbar nach unten setzen
         canvas.scrollTop = canvas.scrollHeight;
     })
 }
 
 leave = () => {
-    sendMsg("SERVER", "testusr hat den Raum verlassen", null).then(() => {
+    let user = sessionStorage.getItem("user")
+    sendMsg("SERVER", user + " hat den Raum verlassen", null).then(() => {
         socket.close();
         window.location.href = "/Programmentwurf/";
     });

@@ -4,6 +4,10 @@ socket.onopen = () => {
     console.log("Connection established");
 }
 
+socket.onmessage = () =>{
+    loadAllMessages();
+}
+
 socket.onclose = () => {
     console.log("close");
 }

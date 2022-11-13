@@ -6,14 +6,28 @@
     <link rel="stylesheet" href="style/home/home.css">
 </head>
 <body id="body">
+    <div class="user">
+        <div class="online"></div>
+        <span class="usernameHeader" id="user"></span>
+    </div>
+
     <button class="logout" onclick="socket2.logout()">Logout</button>
     <button class="switch" onclick="switchFunc()" id="switch">PM</button>
+
     <div class="container" id="roomContainer">
         <label for="roomId">Raum beitreten</label>
         <input type="text" id="roomId" placeholder="Raum-ID">
-        <button id="createRoom">Raum erstellen / betreten</button>
+        <button id="createRoom" onclick="createRoom()">Raum erstellen / betreten</button>
         <div class="rule"><b>Erlaubte Zeichen: </b><br><span>a-z; A-Z; 0-9; -; _</span></div>
     </div>
+
+    <div class="containerPM" id="pmContainer" style="display: none">
+        <label>Direktnachricht senden</label>
+        <input type="text" id="receiver" placeholder="Empfänger">
+        <input type="text" id="message" placeholder="Nachricht">
+        <button id="pmsend" onclick="sendPrivateMsg()">Nachricht senden</button>
+    </div>
+
 </body>
 </html>
 <script src="js/components/home.js"></script>

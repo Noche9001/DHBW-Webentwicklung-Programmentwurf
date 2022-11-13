@@ -3,9 +3,6 @@
 
 
 # Voraussetzungen
-
-Run `npm install express`
-
-Run `npm install express-ws`
+Application is named `Programmentwurf`
 
 Run `npm start` to start the WebSocket-Server

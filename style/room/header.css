@@ -13,8 +13,6 @@
     grid-template-columns: 52px 1fr 1fr 1fr 52px;
 }
 
-
-
 .online {
     grid-column: 1;
 
@@ -25,7 +23,6 @@
     background-color: lightgreen;
 
     align-self: center;
-    text-align: center;
     justify-self: right;
 
     margin-right: 8px;

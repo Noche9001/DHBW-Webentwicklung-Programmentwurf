@@ -4,6 +4,12 @@ html, body {
     background: linear-gradient(147deg, rgba(10,10,10,1) 0%, rgba(55,65,73,1) 57%);
     height: 100%;
     overflow: hidden;
+
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .container {
@@ -88,12 +94,50 @@ label {
     border-radius: 5px;
     background: linear-gradient(147deg, rgba(124,212,227,1) 0%, rgba(83,171,187,1) 65%);
     box-shadow: 0 0 50px 10px rgba(255,255,255,0.37);
-
 }
 
 .rule {
     text-align: center;
 }
+
 button:hover{
     cursor: pointer;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+}
+
+.online {
+    margin-top: 15px;
+    margin-left: 15px;
+
+    width: 15px;
+    height: 15px;
+
+    border-radius: 20px;
+    background-color: lightgreen;
+
+    text-align: center;
+    animation: glow 6s infinite;
+}
+
+.usernameHeader{
+    margin-top: 15px;
+    margin-left: 15px;
+
+    color: whitesmoke;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 1px limegreen;
+    }
+    50% {
+        box-shadow: 0 0 15px limegreen;
+    }
+    100%{
+        box-shadow: 0 0 1px limegreen;
+    }
 }

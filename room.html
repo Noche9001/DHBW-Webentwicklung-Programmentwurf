@@ -3,16 +3,19 @@
 <script src="js/api/msgapi.js"></script>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title id="title"></title>
     <link rel="stylesheet" href="style/room/room.css">
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <div class="online"></div>
             <span class="usernameHeader" id="user"></span>
+
             <button onclick="leave()">Raum verlassen</button>
             <span class="roomId">Raum-ID: <b id="roomId"></b></span>
         </div>
@@ -22,12 +25,10 @@
         </div>
 
         <div class="footer">
-            <input type="text" id="message">
+            <input type="text" id="message" placeholder="Nachricht eingeben">
             <button type="submit" onclick="send()">Senden</button>
         </div>
     </div>
-
 </body>
 </html>
 <script src="js/components/room.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.0.js"></script>

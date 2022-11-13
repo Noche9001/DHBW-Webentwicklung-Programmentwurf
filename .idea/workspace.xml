@@ -4,22 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fa171ff-7b4d-4da5-ac84-0c2dc548c6b0" name="Changes" comment="Stand 12/11&#10;-UI Überarbeitung&#10;-Raumname prüfung&#10;(-Scrollbar)&#10;&#10;TODO&#10;-Username Eingabe&#10;-Nachrichten an einzelne User">
+    <list default="true" id="7fa171ff-7b4d-4da5-ac84-0c2dc548c6b0" name="Changes" comment="Scrollbar + Aufräumen">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_2022_07_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_2022_07_40__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_2022_07_40__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_11_2022_07_40__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2022_07_41__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2022_07_41__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2022_07_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_11_2022_07_46__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/components/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/components/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/components/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/room.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/ws/socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ws/socket.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/ws/socket2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ws/socket2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/ws/socketServer.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ws/socketServer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/chat.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/room/canvas.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/room/canvas.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/home/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/home/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/room/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/room/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/room/room.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/room/room.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/room/spinner.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/room/spinner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ws/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ws/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +113,7 @@
       <workItem from="1667944230142" duration="12730000" />
       <workItem from="1667957653748" duration="1719000" />
       <workItem from="1668212221576" duration="22847000" />
+      <workItem from="1668376682323" duration="6606000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1667582861873</created>
@@ -137,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668252145253</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Scrollbar + Aufräumen">
+      <created>1668256970827</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668256970827</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +172,7 @@
     <MESSAGE value="Stand 09/11&#10;-Raum erstellen möglich&#10;-Nachrichten in Raum senden möglich&#10;&#10;TODO&#10;-Username Eingabe&#10;-Nachrichten an einzelne User&#10;-Frontend überarbeiten" />
     <MESSAGE value="Stand 12/11&#10;-UI Überarbeitung&#10;-Raumname prüfung&#10;(-Scrollbar)&#10;&#10;TODO&#10;-Username Eingabe&#10;-Nachrichten an einzelne User" />
     <MESSAGE value="Stand 12/11&#10;-UI Überarbeitung&#10;-Raumname prüfung&#10;-Username Eingabe&#10;-Nachrichten an einzelne User&#10;&#10;TODO&#10;(-Scrollbar)&#10;(-Auto-Update bei Allen Usern im Raum)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stand 12/11&#10;-UI Überarbeitung&#10;-Raumname prüfung&#10;-Username Eingabe&#10;-Nachrichten an einzelne User&#10;&#10;TODO&#10;(-Scrollbar)&#10;(-Auto-Update bei Allen Usern im Raum)" />
+    <MESSAGE value="Scrollbar + Aufräumen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scrollbar + Aufräumen" />
   </component>
 </project>
