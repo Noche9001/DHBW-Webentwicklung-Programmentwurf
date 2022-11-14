@@ -3,6 +3,6 @@
 
 
 # Voraussetzungen
-Application is named `Programmentwurf`
+Directory must be renamed to `Programmentwurf` after download
 
-Run `npm start` to start the WebSocket-Server
+Run `npm start` to start the WebSocket-Server required for private Messages 
