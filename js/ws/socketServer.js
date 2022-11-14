@@ -1,5 +1,6 @@
 // https://www.youtube.com/watch?v=_Z9Axfh6AEU
 const app = require('express')();
+const appWs = require('express-ws')(app);
 
 //Verbundene Nutzer (Nutzername -> Verbindung)
 const conns = new Map();
