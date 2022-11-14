@@ -15,6 +15,7 @@ socket2.onmessage = (msg) => {
                 //Nur von Loginseite aus redicrect auf index
                 if(window.location.pathname === "/Programmentwurf/login.html") window.location.href = "/Programmentwurf/";
         }
+        else alert(msg.data)
 }
 
 socket2.setUser = () => {
